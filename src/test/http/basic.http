@@ -1,0 +1,21 @@
+###
+
+GET http://localhost:8080/members
+Authorization: Basic user 1234
+
+###
+
+POST http://localhost:8080/oauth/token
+Authorization: Basic foo bar
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+
+###
+
+POST http://foo:bar@localhost:8080/oauth/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&scope=read&client_id=foo&client_secret=bar
+
+###

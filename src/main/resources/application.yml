@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/ecem?serverTimezone=UTC&characterEncoding=UTF-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 1234
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      show-sql: true
+      format_sql: true
+#
+#  security:
+#    user:
+#      name: user
+#      password: 1234
+#
+#logging:
+#  level:
+#    org.springframework.jdbc: TRACE
